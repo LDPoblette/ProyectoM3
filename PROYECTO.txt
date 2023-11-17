@@ -1,0 +1,33 @@
+Cuando usuario no loggeado:
+- Se puede acceder solo a busqueda e inicio
+- Se puede buscar por nombre de disco
+- Si dan click en firmarse llamará un modal de inicio de sesión
+
+Cuando usuario loggeado:
+- Inicio se transforma en usuarios
+- Buscar disco se transforma en alta disco
+- Cuando se selecciona alta disco, debe aparecer formulario
+- El boton firmarse se transforma en salir
+
+Clausulas
+- Solo el usuario root puede dar de alta de usuarios y discos
+- Cualquier usuario puede ver lista de usuarios y dar de alta discos
+
+********************************************************************
+************************* P R O G R E S O **************************
+********************************************************************
+- Se realizó el layout de la pagina
+- Se creó la barra de navegación y se dió estilo
+- Se creó la pagina de inventario con tabla y busqueda
+- Se creó formulario de alta de disco nuevo
+- Se crearon componentes de boton, input, card
+- Se estableció la navegación entre paginas con react-router
+- Se creó un arreglo inicial de discos
+
+********************************************************************
+************************* F A L T A N T E **************************
+********************************************************************
+1.- Añadir filtro de busqueda de discos
+2.- Añadir función para ingresar discos desde formulario
+3.- Crear modal de inicio de sesión
+4.- Añadir lógica de inicio de sesión
