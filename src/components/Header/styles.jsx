@@ -9,7 +9,7 @@ export const NavLayout = styled.nav`
     padding: 25px 35px;
     border-radius: 7px;
 
-    background-color: #31353b;
+    background-color: var(--otherColor);
     width: 95%;
     height: 80px;
 
@@ -45,6 +45,6 @@ export const NavLayout = styled.nav`
 
     ul li .hola:hover{
         background-color: grey;
-        color: #31353b;
+        color: var(--otherColor);
     }
 `

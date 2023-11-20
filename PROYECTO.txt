@@ -23,11 +23,12 @@ Clausulas
 - Se crearon componentes de boton, input, card
 - Se estableció la navegación entre paginas con react-router
 - Se creó un arreglo inicial de discos
+- Se agregó filtro por nombre y artista a la pagina de inventario
+- Se agregó función para añadir nuevos discos a la tabla
 
 ********************************************************************
 ************************* F A L T A N T E **************************
 ********************************************************************
-1.- Añadir filtro de busqueda de discos
-2.- Añadir función para ingresar discos desde formulario
+1.- Añadir validación a campos de alta disco (pedir apoyo)
 3.- Crear modal de inicio de sesión
 4.- Añadir lógica de inicio de sesión

@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const Btn = styled.button`
     height: 35px;
-    width: 6.1rem;
+    width: 80px;
     padding: 4px;
     border: none;
     border-radius: 0 10px 10px 0;
@@ -15,7 +15,7 @@ export const Btn = styled.button`
     transition: 0.3s ease;
 
     &:hover{
-        height: 2.7rem;
-        width: 6.5rem;
+        height: 45px;
+        width: 90px;
     }
 `

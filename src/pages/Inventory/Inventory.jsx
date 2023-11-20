@@ -41,14 +41,14 @@ function Inventory() {
             <InventoryLayout>
                 <NewDisk onNewDisk={handleDisk}></NewDisk>
 
-                <DiskLayout>
-                    <div className="form" style={{marginBottom: "15px"}}>
-                        <label htmlFor="input-searching"></label>
-                        <Input name="input-searching" type="text" placeholder="Introducir texto" 
-                               value={filter} onChange={handleFilter}/>
-                        <Btn>Buscar</Btn>
-                    </div>
+                <div className="form" style={{marginBottom: "15px"}}>
+                    <label htmlFor="input-searching"></label>
+                    <Input name="input-searching" type="text" placeholder="Introducir texto" 
+                            value={filter} onChange={handleFilter}/>
+                    <Btn>Buscar</Btn>
+                </div>
 
+                <DiskLayout>
                     <table id="inventory">
                         <thead className="tfragment">
                             <tr>

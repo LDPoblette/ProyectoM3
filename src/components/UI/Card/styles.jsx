@@ -7,7 +7,7 @@ export const CardLayout = styled.div`
     padding: 25px 35px;
     border-radius: 7px;
 
-    background-color: #31353b;
+    background-color: var(--otherColor);
     width: 95%;
     height: 32.5rem;
 `

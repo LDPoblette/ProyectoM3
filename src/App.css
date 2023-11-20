@@ -1,3 +1,10 @@
+:root{
+    --baseColor: #565d69;
+    --otherColor: #31353b;
+    --black: black;
+    --errorColour: #e66e72;
+}
+
 body{
-    background-color: #565d69;
+    background-color: var(--baseColor);
 }

@@ -5,6 +5,7 @@ import { NavLayout } from "./styles";
 import{ Btn } from "../UI/Button/Button"
 
 function NavBar() {
+
     return(
         <>
             <NavLayout>
@@ -22,9 +23,7 @@ function NavBar() {
                     </li>
 
                     <li>
-                        <Link to="/login">
-                            <Btn>Firmarse</Btn>
-                        </Link>
+                        <Link to="/login"><Btn>Firmarse</Btn></Link>
                     </li>
                 </ul>
             </NavLayout>

@@ -11,7 +11,7 @@ export const DiskLayout = styled.div`
         width: 100%;
         display: flex;
         justify-content: left;
-        background-color: #565d69;
+        background-color: var(--baseColor);
 
         & .tfragment{
             width: 100%;
