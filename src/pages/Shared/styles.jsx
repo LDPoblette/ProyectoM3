@@ -15,4 +15,12 @@ export const Validation = styled.div`
             border: solid 1px red;
         }
     }
+
+    &.buttons{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: end;
+    }
 `

@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/LogoCDLand.jpg"
 import { NavLayout } from "./styles";
 import{ Btn } from "../UI/Button/Button"
+import AuthContext from "../../contexts/AuthContext";
 
 function NavBar() {
+
+    const authContext = useContext(AuthContext);
 
     return(
         <>
@@ -23,7 +26,11 @@ function NavBar() {
                     </li>
 
                     <li>
-                        <Link to="/login"><Btn>Firmarse</Btn></Link>
+                        <Link to="/login">
+                            <Btn onClick={authContext.onLogout}>
+                                {authContext.isLoggedIn ? 'Salir' : 'Firmarse'}
+                            </Btn>
+                        </Link>
                     </li>
                 </ul>
             </NavLayout>

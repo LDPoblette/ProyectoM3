@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import Card from "../../components/UI/Card/Card";
 import { InventoryLayout } from "./styles";
 import Disk from "../../components/Disk/Disk";
@@ -6,9 +6,11 @@ import NewDisk from "../NewDisk/NewDisk";
 import { Input } from "../../components/UI/Input/Input";
 import { Btn } from "../../components/UI/Button/Button";
 import { DiskLayout } from "../../components/Disk/styles";
+import AuthContext from "../../contexts/AuthContext";
 
 function Inventory() {
     const [filter, setFilter] = useState('');
+    const authContext = useContext(AuthContext);
     const [disks, setDisks] = useState([
         {
             id: 1,
@@ -39,7 +41,7 @@ function Inventory() {
     return (
         <Card>
             <InventoryLayout>
-                <NewDisk onNewDisk={handleDisk}></NewDisk>
+                {authContext.isLoggedIn && <NewDisk onNewDisk={handleDisk}></NewDisk>}
 
                 <div className="form" style={{marginBottom: "15px"}}>
                     <label htmlFor="input-searching"></label>
