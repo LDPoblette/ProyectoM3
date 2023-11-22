@@ -44,10 +44,9 @@ function Inventory() {
                 {authContext.isLoggedIn && <NewDisk onNewDisk={handleDisk}></NewDisk>}
 
                 <div className="form" style={{marginBottom: "15px"}}>
-                    <label htmlFor="input-searching"></label>
+                    <label htmlFor="input-searching">Buscar</label>
                     <Input name="input-searching" type="text" placeholder="Introducir texto" 
                             value={filter} onChange={handleFilter}/>
-                    <Btn>Buscar</Btn>
                 </div>
 
                 <DiskLayout>

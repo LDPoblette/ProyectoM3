@@ -1,5 +1,6 @@
 import React, {createContext, useEffect, useState} from "react";
 import { useNavigate } from "react-router-dom";
+import Modal from "../pages/Shared/Modal";
 
 const AuthContext = createContext({
     isLoggedIn: false
@@ -8,6 +9,7 @@ const AuthContext = createContext({
 export const AuthContextProvider = ({children}) => {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const navigate = useNavigate();
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     const loginHandler = async (email, password) => {
         const url = `https://disco-store-default-rtdb.firebaseio.com/Users.json?orderBy="email"&equalTo="${email}"`
@@ -26,7 +28,7 @@ export const AuthContextProvider = ({children}) => {
             const result = await loginHandler(email, password);
 
             if(Object.values(result).length ===0){
-                alert("El usuario no existe");
+                setIsModalOpen(true);
             }else{
                 const id = Object.keys(result)[0];
                 localStorage.setItem('isLoggedIn', true);
@@ -64,6 +66,13 @@ export const AuthContextProvider = ({children}) => {
             }}>
                 {children}
             </AuthContext.Provider>
+
+            <Modal 
+                title={"Usuario no encontrado"} 
+                content={"Por favor ingresar usuario valido"} 
+                isOpen={isModalOpen} 
+                action={"OK"} 
+                onConfirm={() => setIsModalOpen(false)}></Modal>
         </>
     )
 }

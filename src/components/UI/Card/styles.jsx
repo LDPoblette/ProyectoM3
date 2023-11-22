@@ -8,6 +8,6 @@ export const CardLayout = styled.div`
     border-radius: 7px;
 
     background-color: var(--otherColor);
-    width: 95%;
+    width: 100%;
     height: 32.5rem;
 `

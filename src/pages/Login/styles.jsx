@@ -5,10 +5,10 @@ export const LoginLayout = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: end;
-    padding: 70px;
+    padding: 50px 70px 25px;
 
-    width: 250px;
-    height: 100px;
+    width: 380px;
+    height: 200px;
     background-color: var(--baseColor);
     border-radius: 20px;
     box-shadow: 0px 0px 5px 1px black;
@@ -23,6 +23,6 @@ export const LoginLayout = styled.div`
     }
 
     & .buttons{
-        margin-top: 30px;
+        margin-top: 15px;
     }
 `

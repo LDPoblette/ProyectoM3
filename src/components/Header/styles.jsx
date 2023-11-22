@@ -10,8 +10,8 @@ export const NavLayout = styled.nav`
     border-radius: 7px;
 
     background-color: var(--otherColor);
-    width: 95%;
-    height: 80px;
+    width: 100%;
+    height: 140px;
 
     img{
         margin-top: 5px;

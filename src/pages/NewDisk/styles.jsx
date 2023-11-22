@@ -13,4 +13,11 @@ export const FormDisk = styled.div`
         align-items: center;
         justify-content: space-evenly;
     }
+
+    & .diskBtn{
+        width: 1000px !important;
+        margin-left: 15px;
+        font-weight: bolder;
+        font-size: larger;
+    }
 `

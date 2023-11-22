@@ -10,12 +10,12 @@ export const Btn = styled.button`
     background-color: black;
     color: aliceblue;
     font-size: smaller !important;
+    opacity: ${(params) => params.disabled ? "0.5" : "1"};
 
     cursor: pointer;
     transition: 0.3s ease;
 
     &:hover{
-        height: 45px;
-        width: 90px;
+        transform: scale(1.2);
     }
 `

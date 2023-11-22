@@ -2,9 +2,11 @@
     --baseColor: #565d69;
     --otherColor: #31353b;
     --black: black;
-    --errorColour: #e66e72;
+    --errorColour: #53292b;
+    --errorBorder: #612c2f;
 }
 
 body{
     background-color: var(--baseColor);
+    margin: 20px !important;
 }

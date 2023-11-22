@@ -7,4 +7,8 @@ export const InventoryLayout = styled.div`
     align-items: start;
     width: 95%;
     color: aliceblue;
+
+    & .form *{
+        margin-right: 10px;
+    }
 `

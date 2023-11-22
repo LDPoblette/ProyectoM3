@@ -54,19 +54,23 @@ function Login(){
             <LoginLayout>
                 <form onSubmit={submitHandler}>
                     <Validation className={`${'login-input'} ${emailValid === false ? 'isInvalid' : ''}`}>
-                        <label htmlFor="user">Usuario</label>
+                        <label htmlFor="user">Usuario*</label>
                         <Input name="user" type="text" placeholder="Correo electrónico" value={email} 
                         onChange={emailHandler} onBlur={emailValidation}/>
                     </Validation>
 
                     <Validation className={`${'login-input'} ${passwordValid === false ? 'isInvalid' : ''}`}>
-                        <label htmlFor="password">Contraseña</label>
+                        <label htmlFor="password">Contraseña*</label>
                         <Input name="password" type="password" placeholder="Contraseña" value={password} 
                         onChange={passwordhandler} onBlur={passwordValidation}/> 
                     </Validation>
 
                     <Validation className="buttons">
-                        <Btn>Acceder</Btn>
+                        <Btn 
+                        disabled={emailValid === false || passwordValid === false || !email || !password}>
+                            Acceder
+                        </Btn>
+
                         <Link to="/home"><Btn>Cancelar</Btn></Link>
                     </Validation>
                 </form>
